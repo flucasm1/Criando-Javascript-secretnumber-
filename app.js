@@ -1,5 +1,5 @@
 alert('Boas-vindas ao jogo do número secreto');
-let secretnumber = 29;
+let secretnumber = 2;
 console.log(secretnumber)
 let guess = prompt('Escolha um número entre 1 e 30'); 
 
