@@ -7,8 +7,7 @@ let tries = 1;
 while (guess != secretnumber) {
     guess = prompt('Escolha um número entre 1 e 30'); 
     if (secretnumber == guess) {    
-    alert(`Isso ai! Você acertou o número secreto ${secretnumber}`);
-    alert('Número de tentativas = ' + tries)
+    break;
 }  else { 
     tries += 1 //ou tries ++
     if  (secretnumber > guess) {
@@ -18,6 +17,11 @@ while (guess != secretnumber) {
     }
 }
 }
- 
 
+if (tries > 1){
+    alert(`Isso ai! Você acertou o número secreto ${secretnumber}`);
+    alert('Número de tentativas = ' + tries)
+} else {
+    alert('Você acertou de primeira!')
+}
 
