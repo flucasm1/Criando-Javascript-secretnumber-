@@ -16,12 +16,14 @@ while (guess != secretnumber) {
     alert('O número secreto é menor que ' + guess);
     }
 }
-}
+} 
+let triesword = tries > 1? 'tentativas' : 'tentativa';
+alert (`Você descobriu o número secreto ${secretnumber} com ${tries} ${triesword}`);
 
-if (tries > 1){
-    alert(`Isso ai! Você acertou o número secreto ${secretnumber}`);
-    alert('Número de tentativas = ' + tries)
-} else {
-    alert('Você acertou de primeira!')
-}
+//if (tries > 1){
+   // alert(`Isso ai! Você acertou o número secreto ${secretnumber}`);
+    //alert('Número de tentativas = ' + tries)
+//} else {
+ //   alert('Você acertou de primeira!')
+//}
 
